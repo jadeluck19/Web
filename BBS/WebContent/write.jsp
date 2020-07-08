@@ -32,7 +32,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="main.jsp">메인</a></li>
-                <li class="active"><a href="bbs.jsp">게시판</a></li>
+                <li class="active"><a href="lecture.jsp">강의</a></li>
+                <li><a href="bbs.jsp">게시판</a></li>
             </ul>
             <%
             // 접속하기는 로그인이 되어있지 않은 경우만 나오게한다
