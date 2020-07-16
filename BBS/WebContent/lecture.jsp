@@ -70,7 +70,30 @@
             %>
         </div>
     </nav>
- 	<a href="bbs.jsp">게시판</a>
+ 	<div class="container">
+        <div class="row">
+            <table class="table table-striped" style="text-align:center; border:1px solid #dddddd">
+                <thead>
+                    <tr>
+                        <th style="background-color:#eeeeee; text-align:center;">번호</th>
+                        <th style="background-color:#eeeeee; text-align:center;">제목</th>
+                    </tr>
+                </thead>
+                <tbody>
+       			<%
+       				for(int i=0;i<15;i++){
+       				%>
+       					<tr>
+       						<td><%= i+1 %></td>
+       						<td>JSP 게시판 만들기 강좌  <%= i+1 %>강</td>
+       					</tr>
+       				<%
+       				}
+       			%>
+                </tbody>
+            </table>
+        </div>
+    </div>
  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
  <script src="js/bootstrap.js"></script>
 </body>
