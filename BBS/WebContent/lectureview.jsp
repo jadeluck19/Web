@@ -17,6 +17,8 @@
     {
         userID = (String)session.getAttribute("userID");
     }
+    
+    String number = request.getParameter("number");
 %>
     <nav class ="navbar navbar-default">
         <div class="navbar-header"> <!-- 홈페이지의 로고 -->
@@ -31,8 +33,8 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="main.jsp">메인</a></li>
-                <li><a href="lecture.jsp">강의</a></li>
+                <li><a href="main.jsp">메인</a></li>
+                <li class="active"><a href="lecture.jsp">강의</a></li>
                 <li><a href="bbs.jsp">게시판</a></li>
             </ul>
             <%
@@ -78,14 +80,32 @@
                 <thead>
                     <tr>
                         <th colspan="3" style="background-color:#eeeeee; text-align:center;">
-                        JSP 게시판 만들기 강좌 1강<!--  여기 수정 필요.. --></th>
+                        JSP 게시판 만들기 강좌 <%=number%>강</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                        	<iframe width="644" height="362" src="https://www.youtube.com/embed/wEIBDHfoMBg?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6" 
-                        		frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        	<!-- 여기 왜 if문이 안먹히는지 해결필요 -->
+                        	<iframe width="644" height="362" 
+                        	<%
+                        	if (number== "1"){
+                        	%>
+                        	src="https://www.youtube.com/embed/wEIBDHfoMBg?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                        	<%
+                        	} else if (number == "2"){
+                        	%>
+                        	 src="https://www.youtube.com/embed/MtxFWczSFqU?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                        	<%
+                        	} else { 
+                        	%>
+                        	src="https://www.youtube.com/embed/kN8xRG6UPZM?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                        	<%
+                        	}
+                        	%>
+                        	 
+                        		frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                        		picture-in-picture" allowfullscreen>
                         	</iframe>
                         </td>   
                     </tr>

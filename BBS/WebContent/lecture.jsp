@@ -85,7 +85,7 @@
        				%>
        					<tr>
        						<td><%= i+1 %></td>
-       						<td><a href="lectureview<%= i+1%>.jsp">
+       						<td><a href="lectureview.jsp?number=<%=i+1%>">
        						JSP 게시판 만들기 강좌  <%= i+1 %>강</a></td>
        					</tr>
        				<%
