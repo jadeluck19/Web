@@ -89,21 +89,39 @@
                         	<!-- 여기 왜 if문이 안먹히는지 해결필요 -->
                         	<iframe width="644" height="362" 
                         	<%
-                        	if (number== "1"){
-                        	%>
-                        	src="https://www.youtube.com/embed/wEIBDHfoMBg?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
-                        	<%
-                        	} else if (number == "2"){
-                        	%>
-                        	 src="https://www.youtube.com/embed/MtxFWczSFqU?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
-                        	<%
-                        	} else { 
-                        	%>
-                        	src="https://www.youtube.com/embed/kN8xRG6UPZM?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
-                        	<%
+                        	switch(request.getParameter("number")){
+                        	case "1":%>src="https://www.youtube.com/embed/wEIBDHfoMBg?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                        		<%break;
+                        	case "2":%>src="https://www.youtube.com/embed/MtxFWczSFqU?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                        		<%break;
+                        	case "3":%>src="https://www.youtube.com/embed/kN8xRG6UPZM?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                        		<%break;
+                        	case "4":%>src="https://www.youtube.com/embed/RYo3OGlRoJw?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "5":%>src="https://www.youtube.com/embed/-Kbhn2TJGn4?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "6":%>src="https://www.youtube.com/embed/v2mmPRLjJGw?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "7":%>src="https://www.youtube.com/embed/eJRB__ErXd4?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "8":%>src="https://www.youtube.com/embed/pCqaGoexV5c?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "9":%>src="https://www.youtube.com/embed/OHvWkg9Bdf0?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "10":%>src="https://www.youtube.com/embed/EmbxlHakkfY?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "11":%>src="https://www.youtube.com/embed/Q-TzxXw2jQY?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "12":%>src="https://www.youtube.com/embed/SC7EP8ID9D8?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "13":%>src="https://www.youtube.com/embed/W9NLm_RNMvI?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "14":%>src="https://www.youtube.com/embed/sFqx8zbPjEE?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
+                        	case "15":%>src="https://www.youtube.com/embed/Bb7OZobUqwc?list=PLRx0vPvlEmdAZv_okJzox5wj2gG_fNh_6"
+                            		<%break;
                         	}
                         	%>
-                        	 
                         		frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
                         		picture-in-picture" allowfullscreen>
                         	</iframe>
