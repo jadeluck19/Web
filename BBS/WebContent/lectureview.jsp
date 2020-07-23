@@ -9,6 +9,13 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css"> <!-- 참조  -->
 <title>JSP 게시판 웹 사이트</title>
+<script type="text/javascript">
+	  $('.starRev span').click(function(){
+	  $(this).parent().children('span').removeClass('on');
+	  $(this).addClass('on').prevAll('span').addClass('on');
+	  return false;});
+	  //jquery 를 사용하면 별점 기능을 사용할 수 있다던데...공부해서 해결해보자 코드는 위와 같다.
+</script>
 </head>
 <body>
 <%
@@ -147,7 +154,18 @@
                    			name="commentContent" maxlength="100" >
                     	</td>
                     	<td>
-                    		별점 기능
+                    		<div class="starRev">
+  								<span class="starR1 on">별1_왼쪽</span>
+ 								<span class="starR2">별1_오른쪽</span>
+  								<span class="starR1">별2_왼쪽</span>
+  								<span class="starR2">별2_오른쪽</span>
+  								<span class="starR1">별3_왼쪽</span>
+  								<span class="starR2">별3_오른쪽</span>
+  								<span class="starR1">별4_왼쪽</span>
+  								<span class="starR2">별4_오른쪽</span>
+  								<span class="starR1">별5_왼쪽</span>
+  								<span class="starR2">별5_오른쪽</span>
+							</div>
                     	</td>
                     	<td>
                     		<input type="submit"  class="btn btn-primary pull-right" value="작성">
