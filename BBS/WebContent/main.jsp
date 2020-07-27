@@ -10,6 +10,16 @@
 <link rel="stylesheet" href="css/custom.css"> <!-- 참조  -->
 <title>JSP 게시판 웹 사이트</title>
 </head>
+<script>
+    function showHide(){
+        if(document.getElementById("showHide").style.display =='none'){
+            document.getElementById("showHide").style.display ='block';
+        }
+        else{
+            document.getElementById("showHide").style.display ='none';
+        }
+    }
+</script>
 <body>
 <%
     String userID = null; // 로그인이 된 사람들은 로그인정보를 담을 수 있도록한다
@@ -75,7 +85,10 @@
             <div class="container">
                 <h1>웹 사이트 소개</h1>
                 <p>이 웹 사이트는 부트스트랩으로 만든 JSP 웹 사이트입니다. 최소한의 간단한 로직만을 이용해서 개발했습니다. 디자인 템플릿으로는 부트스트랩을 이용했습니다.</p>
-                <p><a class="btn btn-primary btn-pull" href="#" role="button">자세히 알아보기</a></p>
+                <div style="display:none;" id = "showHide" >
+                	<p>유투버 동빈나님의 "JSP 게시판 만들기 강좌"를 기반으로 만들어진 사이트 입니다. 회원가입/로그인을 통해 게시판에 글을 작성할 수 있으며, 강의게시판에서 해당 강의를 시청할 수 있습니다.</p>
+                </div>
+                <p><a class="btn btn-primary btn-pull" onclick=showHide(); role="button">자세히 알아보기</a></p>
             </div>
         </div>
     </div>
