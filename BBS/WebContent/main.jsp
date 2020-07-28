@@ -101,7 +101,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="images/1.jpg">
+                    <img src="images/1.JPG">
                 </div>
                 <div class="item">
                     <img src="images/2.jpg">
@@ -117,6 +117,9 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div>
+    </div>
+    <div style="back-ground-color:grey" class="container">
+    
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
