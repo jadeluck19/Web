@@ -10,13 +10,6 @@
 <link rel="stylesheet" href="css/custom.css"> <!-- 참조  -->
 <title>JSP 게시판 웹 사이트</title>
 </head>
-<script type="text/javascript">
-	  $('.starRev span').click(function(){
-	  $(this).parent().children('span').removeClass('on');
-	  $(this).addClass('on').prevAll('span').addClass('on');
-	  return false;});
-	  //jquery 를 사용하면 별점 기능을 사용할 수 있다던데...공부해서 해결해보자 코드는 위와 같다.
-</script>
 <body>
 <%
     String userID = null; // 로그인이 된 사람들은 로그인정보를 담을 수 있도록한다
@@ -177,6 +170,12 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+      $('.starRev span').click(function(){
+  	  $(this).parent().children('span').removeClass('on');
+  	  $(this).addClass('on').prevAll('span').addClass('on');
+  	  return false;});
+    </script>
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
