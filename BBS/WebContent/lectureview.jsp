@@ -128,44 +128,7 @@
                     </tr>
                 </tbody>
              </table>
-             <table class="table table-striped" style="text-align:center; border:1px solid #dddddd">
-             	<thead>
-                    <tr>
-                        <th colspan="3" style="background-color:#eeeeee; text-align:center;">
-                      	댓글 작성
-                        </th>
-                    </tr>
-                </thead>
-             	<tbody>
-                    <tr>
-                    <!--  여기다 댓글 & 별점 기능 구현 -->
-                    	<td>
-                    	아이디
-                    	</td>
-                    	<td>   		
-                   			<input type="text" class="form-control" placeholder="댓글"  
-                   			name="commentContent" maxlength="100" >
-                    	</td>
-                    	<td>
-                    		<div class="starRev">
-  								<span class="starR1 on">별1_왼쪽</span>
- 								<span class="starR2">별1_오른쪽</span>
-  								<span class="starR1">별2_왼쪽</span>
-  								<span class="starR2">별2_오른쪽</span>
-  								<span class="starR1">별3_왼쪽</span>
-  								<span class="starR2">별3_오른쪽</span>
-  								<span class="starR1">별4_왼쪽</span>
-  								<span class="starR2">별4_오른쪽</span>
-  								<span class="starR1">별5_왼쪽</span>
-  								<span class="starR2">별5_오른쪽</span>
-							</div>
-                    	</td>
-                    	<td>
-                    		<input type="submit"  class="btn btn-primary pull-right" value="작성">
-                    	</td>
-                    </tr>
-                </tbody>
-            </table>
+             
             <a href="lecture.jsp" class="btn btn-primary">목록</a>
         </div>
     </div>

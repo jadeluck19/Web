@@ -104,10 +104,10 @@
                     <img src="images/1.JPG">
                 </div>
                 <div class="item">
-                    <img src="images/2.jpg">
+                    <img src="images/2.JPG">
                 </div>
                 <div class="item">
-                    <img src="images/3.jpg">
+                    <img src="images/3.JPG">
                 </div>
             </div>
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -117,9 +117,6 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div>
-    </div>
-    <div style="back-ground-color:grey" class="container">
-    
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
